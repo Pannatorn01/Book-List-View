@@ -17,6 +17,7 @@ export const useBookStore = defineStore('book', {
    },
    editBook (bookData, bookIndex) {
     this.books.splice(bookIndex, 1, bookData)
+    localStorage.setItem('bookList', JSON.stringify(this.books))
    }
   }
 })
