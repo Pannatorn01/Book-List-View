@@ -1,0 +1,117 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+h1 
+{
+  color: rgb(198, 169, 105);
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+div,
+input
+{
+  font-size: 3rem;
+}
+
+h2
+{
+  font-size: 2rem;
+}
+
+.btn-submit
+{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+}
+.btn-submit:hover {
+  background-color: #46a049;
+  color: black;
+}
+
+.btn-edit
+{
+  border: none; 
+  padding: 8px 28px; 
+  cursor: pointer; 
+  margin-inline-start: 2%;
+  border-radius: 15px;
+}
+
+.btn-edit:hover {
+  background-color: rgb(170, 215, 217);
+  color: black;
+}
+
+.btn-delete
+{
+  border: none; 
+  padding: 8px 28px; 
+  cursor: pointer; 
+  margin-inline-start: 2%;
+  border-radius: 15px;
+}
+
+.btn-delete:hover {
+  background-color: rgb(176, 97, 97);
+  color: black;
+}
+
+.book-list
+{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.input-bookname
+{
+  font-size: 3rem;
+  margin-inline-start: 20px;
+  border-radius: 15px;
+  padding: 2px 20px;
+}
+
+.input-bookauthor
+{
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 2px 20px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 0 3rem;
+  }
+}
+
